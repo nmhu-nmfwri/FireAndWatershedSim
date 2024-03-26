@@ -1,0 +1,264 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3510152678914282062
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1000012280642888, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_Name
+      value: FireManager Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012280642888, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012280642888, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_TagString
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010134708574, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010134708574, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010134708574, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010134708574, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010134708574, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010134708574, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010134708574, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010134708574, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_airTemperature
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_combustionRate
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_maxGrassDetails
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_propagationBias
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainUpdateTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_detailedSimulation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_nodeCombustionRate
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_propagationWindBias
+      value: 0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_removeGrassOnceBurnt
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_burntGrassDetailIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_burntGrassTextureIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_staggeredGridConstruction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_replaceGroundTextureOnceBurnt
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellFireSpawnPositions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellFireSpawnPositions.Array.data[0].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellFireSpawnPositions.Array.data[0].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellFireSpawnPositions.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellFireSpawnPositions.Array.data[1].y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellFireSpawnPositions.Array.data[2].x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellFireSpawnPositions.Array.data[2].y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellFireSpawnPositions.Array.data[3].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_cellFireSpawnPositions.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[0].m_flammable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[1].m_flammable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[1].m_textureID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[2].m_flammable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[2].m_textureID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[3].m_textureID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[0].m_HPLowerValue
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[1].m_HPLowerValue
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[0].m_HPHigherValue
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[1].m_HPHigherValue
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[0].m_fuelLowerValue
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[1].m_fuelLowerValue
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[0].m_fuelHigherValue
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[1].m_fuelHigherValue
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[2].m_isGroundBurnTexture
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[0].m_firePropagationSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013635316820, guid: 81c0ebf3dd313d845bcbc5656a03cae4,
+        type: 3}
+      propertyPath: m_terrainTextures.Array.data[1].m_firePropagationSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81c0ebf3dd313d845bcbc5656a03cae4, type: 3}
