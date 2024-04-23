@@ -1,5 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
+// MouseLook.cs
+// Programmer: Originally created by Joseph Hocking and modified by Robert Garner(rganer011235@gmail.com)
+// Original Source: https://github.com/jhocking/uia-3e/
+// Date: 04/07/2021
+// Description: This script is used to handle the mouse look in the game.
+
 using UnityEngine;
 
 // MouseLook rotates the transform based on the mouse delta.
@@ -14,6 +18,9 @@ using UnityEngine;
 // - Add a MouseLook script to the camera.
 //   -> Set the mouse look to use MouseY. (You want the camera to tilt up and down like a head. The character already turns.)
 
+/// <summary>
+/// MouseLook rotates the transform based on the mouse delta.
+/// </summary>
 [AddComponentMenu("Control Script/Mouse Look")]
 public class MouseLook : MonoBehaviour {
 	public enum RotationAxes {
@@ -39,7 +46,9 @@ public class MouseLook : MonoBehaviour {
 		}
 	}
 
+
 	void Update() {
+		//TODO: Consider breaking this out into a separate classes. RJG
 		if (axes == RotationAxes.MouseX) {
 			transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityHor, 0);
 		}
