@@ -1,8 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿// UIController.cs
+// Programmer: Originally created by Joseph Hocking and modified by Robert Garner(rganer011235@gmail.com)
+// Original Source: https://github.com/jhocking/uia-3e/
+// Date: 04/07/2021
+// Description: This script is used to handle the reaction of the target when it is hit by the player.
+
+using System.Collections;
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// This script is used to control the UI elements in the game.
+/// </summary>
 public class UIController : MonoBehaviour {
 	[SerializeField] TMP_Text foundHazardText;
 	[SerializeField] TMP_Text statusText;

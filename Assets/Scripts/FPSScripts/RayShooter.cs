@@ -1,7 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+// RayShooter.cs
+// Programmer: Originally created by Joseph Hocking and modified by Robert Garner(rganer011235@gmail.com)
+// Original Source: https://github.com/jhocking/uia-3e/
+// Date: 04/07/2021
+// Description: This script is used to handle the raycasting in the game.
+
 using UnityEngine;
 
+/// <summary>
+/// This script is used to handle the raycasting in the game.
+/// </summary>
 public class RayShooter : MonoBehaviour {
 	private Camera cam;
 
@@ -32,18 +39,8 @@ public class RayShooter : MonoBehaviour {
 				} 
 				else {
 					Messenger.Broadcast("NOT_HAZARD_FOUND");
-					//StartCoroutine(SphereIndicator(hit.point));
 				}
 			}
 		}
 	}
-
-	// private IEnumerator SphereIndicator(Vector3 pos) {
-	// 	GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-	// 	sphere.transform.position = pos;
-
-	// 	yield return new WaitForSeconds(1);
-
-	// 	Destroy(sphere);
-	// }
 }

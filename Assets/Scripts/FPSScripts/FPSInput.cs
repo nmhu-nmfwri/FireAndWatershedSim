@@ -1,10 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+// FPSInputs.cs
+// Programmer: Originally created by Joseph Hocking and modified by Robert Garner(rganer011235@gmail.com)
+// Original Source: https://github.com/jhocking/uia-3e/
+// Date: 04/07/2021
+// Description: This script is used to handle the first-person player movement.
+ 
 using UnityEngine;
 
-// basic WASD-style movement control
-// commented out line demonstrates that transform.Translate instead of charController.Move doesn't have collision detection
-
+/// <summary>
+/// This script is used to handle the first-person player movement. 
+/// </summary>
 [RequireComponent(typeof(CharacterController))]
 [AddComponentMenu("Control Script/FPS Input")]
 public class FPSInput : MonoBehaviour {
@@ -18,7 +22,6 @@ public class FPSInput : MonoBehaviour {
 	}
 	
 	void Update() {
-		//transform.Translate(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0, Input.GetAxis("Vertical") * speed * Time.deltaTime);
 		float deltaX = Input.GetAxis("Horizontal") * speed;
 		float deltaZ = Input.GetAxis("Vertical") * speed;
 		Vector3 movement = new Vector3(deltaX, 0, deltaZ);
@@ -29,5 +32,7 @@ public class FPSInput : MonoBehaviour {
 		movement *= Time.deltaTime;
 		movement = transform.TransformDirection(movement);
 		charController.Move(movement);
+
+		//TODO: Add head bobbing and jumping. RJG
 	}
 }

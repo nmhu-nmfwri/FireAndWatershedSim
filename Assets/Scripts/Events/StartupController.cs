@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿// StartupController.cs
+// Programmer: Originally created by Joseph Hocking and modified by Robert Garner(rganer011235@gmail.com)
+// Original Source: https://github.com/jhocking/uia-3e/
+// Date: 04/07/2021
+// Description: This script is used to handle the startup of the game. 
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
