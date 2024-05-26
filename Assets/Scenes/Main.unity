@@ -3545,6 +3545,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97efcc01beaea3549862df80d5eb9bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &927794028 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 132226772605852263, guid: 992f51fb88a339e4187580505dc285fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1689287786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927794020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ab6dac0cfc1d4419937f81792a8e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &952551968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3675,7 +3687,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 611943123}
+        - m_Target: {fileID: 927794028}
           m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
           m_MethodName: SetButtonVerticalRotation
           m_Mode: 4
@@ -3683,7 +3695,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: 0.25
+            m_FloatArgument: -0.25
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -3691,7 +3703,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 611943123}
+        - m_Target: {fileID: 927794028}
           m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
           m_MethodName: SetButtonVerticalRotation
           m_Mode: 4
@@ -4405,7 +4417,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 611943123}
+        - m_Target: {fileID: 927794028}
           m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
           m_MethodName: SetButtonVerticalRotation
           m_Mode: 4
@@ -4413,7 +4425,7 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
-            m_FloatArgument: -0.25
+            m_FloatArgument: 0.25
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
@@ -4421,7 +4433,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 611943123}
+        - m_Target: {fileID: 927794028}
           m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
           m_MethodName: SetButtonVerticalRotation
           m_Mode: 4
