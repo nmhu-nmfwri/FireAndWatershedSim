@@ -37,8 +37,11 @@ public class MouseLook : MonoBehaviour {
 	public float maximumVert = 45.0f;
 
 	private float verticalRot = 0;
-	
-	void Start() {
+	private float guiHorizontalRot = 0;
+	private float guiVerticalRot = 0;
+
+
+    void Start() {
 		// Make the rigid body not change rotation
 		Rigidbody body = GetComponent<Rigidbody>();
 		if (body != null) {
@@ -50,10 +53,12 @@ public class MouseLook : MonoBehaviour {
 	void Update() {
 		//TODO: Consider breaking this out into a separate classes. RJG
 		if (axes == RotationAxes.MouseX) {
-			transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityHor, 0);
+			transform.Rotate(0, (Input.GetAxis("Mouse X") + guiHorizontalRot) * sensitivityHor, 0);
 		}
 		else if (axes == RotationAxes.MouseY) {
 			verticalRot -= Input.GetAxis("Mouse Y") * sensitivityVert;
+			verticalRot -= guiVerticalRot * sensitivityVert;
+			Debug.Log("Vertical Rotation: " + verticalRot);
 			verticalRot = Mathf.Clamp(verticalRot, minimumVert, maximumVert);
 
 			float horizontalRot = transform.localEulerAngles.y;
@@ -61,13 +66,26 @@ public class MouseLook : MonoBehaviour {
 			transform.localEulerAngles = new Vector3(verticalRot, horizontalRot, 0);
 		}
 		else {
-			verticalRot -= Input.GetAxis("Mouse Y") * sensitivityVert;
+			verticalRot -= Input.GetAxis("Mouse Y")  * sensitivityVert;
+			verticalRot -= guiVerticalRot * sensitivityVert;
 			verticalRot = Mathf.Clamp(verticalRot, minimumVert, maximumVert);
 
-			float delta = Input.GetAxis("Mouse X") * sensitivityHor;
+			float delta = (Input.GetAxis("Mouse X") + guiHorizontalRot) * sensitivityHor;
 			float horizontalRot = transform.localEulerAngles.y + delta;
 
 			transform.localEulerAngles = new Vector3(verticalRot, horizontalRot, 0);
 		}
 	}
+
+	public void SetButtonHorizontalRotation(float rotation)
+	{
+		Debug.Log("Setting Horizontal Rotation: " + rotation);
+        guiHorizontalRot = rotation;
+    }
+
+    public void SetButtonVerticalRotation(float rotation)
+    {
+		Debug.Log("Setting Vertical Rotation: " + rotation);
+        guiVerticalRot = rotation;
+    }
 }

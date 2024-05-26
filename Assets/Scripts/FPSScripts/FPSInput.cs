@@ -14,6 +14,8 @@ using UnityEngine;
 public class FPSInput : MonoBehaviour {
 	public float speed = 6.0f;
 	public float gravity = -9.8f;
+	private float translateForward = 0;
+	private float translateLeft = 0;
 
 	private CharacterController charController;
 	
@@ -22,8 +24,8 @@ public class FPSInput : MonoBehaviour {
 	}
 	
 	void Update() {
-		float deltaX = Input.GetAxis("Horizontal") * speed;
-		float deltaZ = Input.GetAxis("Vertical") * speed;
+		float deltaX = (Input.GetAxis("Horizontal")-translateLeft) * speed;
+		float deltaZ = (Input.GetAxis("Vertical")+translateForward) * speed;
 		Vector3 movement = new Vector3(deltaX, 0, deltaZ);
 		movement = Vector3.ClampMagnitude(movement, speed);
 
@@ -35,4 +37,13 @@ public class FPSInput : MonoBehaviour {
 
 		//TODO: Add head bobbing and jumping. RJG
 	}
+
+    public void TranslateForwardButton(float forward)
+    {
+        translateForward = forward;
+    }
+    public void TranslateLeftButton(float left)
+    {
+        translateLeft = left;
+    }
 }
