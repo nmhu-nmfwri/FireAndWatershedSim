@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/StartScene.unity
+    guid: 34e048128cd1d9248829c0ca9c88babf
+  - enabled: 1
+    path: Assets/Scenes/HowToProtectYourHomeEducation.unity
+    guid: 72b7606862274524e81684dd30b79285
+  - enabled: 1
+    path: Assets/Scenes/HazardID.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/FirePropagation/Scenes/VillageDemo.unity
-    guid: 76502eb374d00894d85979948a1bbe35
   m_configObjects: {}

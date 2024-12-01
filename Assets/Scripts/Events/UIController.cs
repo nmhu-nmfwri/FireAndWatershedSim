@@ -13,16 +13,19 @@ using TMPro;
 /// </summary>
 public class UIController : MonoBehaviour {
 	[SerializeField] TMP_Text foundHazardText;
+	
+	[SerializeField] TMP_Text messageText;
+	
 	[SerializeField] TMP_Text statusText;
 	public int totalHazards = 3;
 	public int hazardsFound=0;
 
 	void OnEnable() {
-		Messenger.AddListener(GameEvent.HAZARD_FOUND, OnHazardFound);
+		Messenger<string>.AddListener(GameEvent.HAZARD_FOUND, OnHazardFound);
 		Messenger.AddListener(GameEvent.NOT_HAZARD_FOUND, OnNotHazardFound);
 	}
 	void OnDisable() {
-		Messenger.RemoveListener(GameEvent.HAZARD_FOUND, OnHazardFound);
+		Messenger<string>.RemoveListener(GameEvent.HAZARD_FOUND, OnHazardFound);
 		Messenger.RemoveListener(GameEvent.NOT_HAZARD_FOUND, OnNotHazardFound);
 	}
 
@@ -39,9 +42,11 @@ public class UIController : MonoBehaviour {
 		// }
 	}
 
-	private void OnHazardFound() {
-		string message = $"You found {++hazardsFound} of {totalHazards} hazards!";
-		foundHazardText.text = message;
+	private void OnHazardFound(string message) {
+		string score = $"You found {++hazardsFound} of {totalHazards} hazards!";
+		foundHazardText.text = score;
+		messageText.text = message;
+
 	}
 
 	private void OnNotHazardFound() {
